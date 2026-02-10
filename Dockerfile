@@ -1,5 +1,5 @@
-# Use Maven with OpenJDK 21 for building
-FROM maven:3.9.6-eclipse-temurin-21 AS build
+# Use Maven with OpenJDK 17 for building
+FROM maven:3.9.6-eclipse-temurin-17 AS build
 
 WORKDIR /app
 
@@ -13,8 +13,8 @@ COPY src ./src
 # Build the application
 RUN mvn clean package -DskipTests
 
-# Use OpenJDK 21 runtime for the final image
-FROM eclipse-temurin:21-jre
+# Use OpenJDK 17 runtime for the final image
+FROM eclipse-temurin:17-jre
 
 WORKDIR /app
 
