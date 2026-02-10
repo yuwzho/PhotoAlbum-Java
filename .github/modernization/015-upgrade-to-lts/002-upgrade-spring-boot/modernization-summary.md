@@ -35,7 +35,14 @@ The following annotations were migrated:
 - `@Entity`, `@Table`, `@Id`, `@Column`, `@Lob`, `@Index` (JPA annotations)
 - `@NotBlank`, `@NotNull`, `@Positive`, `@Size` (validation annotations)
 
-### 4. Other Files Analyzed
+### 4. Docker Configuration Update
+**File**: `Dockerfile`
+
+- **Build Image**: Updated from `maven:3.9.6-eclipse-temurin-21` to `maven:3.9.6-eclipse-temurin-17`
+- **Runtime Image**: Updated from `eclipse-temurin:21-jre` to `eclipse-temurin:17-jre`
+- **Reason**: Ensures consistency between pom.xml Java version and Docker runtime environment
+
+### 5. Other Files Analyzed
 The following files were checked and **required no changes**:
 - Controllers: `HomeController.java`, `DetailController.java`, `PhotoFileController.java`
 - Services: `PhotoService.java`, `PhotoServiceImpl.java`
@@ -110,18 +117,21 @@ Spring Boot 3.x maintains backward compatibility with most Spring Boot 2.x prope
 
 1. `pom.xml` - Version upgrades and dependency updates
 2. `src/main/java/com/photoalbum/model/Photo.java` - Jakarta namespace migration
+3. `Dockerfile` - Java 17 runtime environment update
 
-**Total Files Changed**: 2
+**Total Files Changed**: 3
 
 ## Known Considerations
 
-1. **Java Version**: The project was originally configured for Java 21 but has been set to Java 17 due to the runtime environment having Java 17. Spring Boot 3.4.2 supports both versions.
+1. **Java Version**: The project was originally configured for Java 21 but has been set to Java 17 due to the runtime environment having Java 17. Spring Boot 3.4.2 supports both versions. The Dockerfile has been updated to use Java 17 images for consistency.
 
 2. **Backward Compatibility**: The application maintains all existing functionality. No business logic was modified.
 
 3. **Oracle Database**: No changes required to database configuration or queries. Spring Boot 3.x and Hibernate 6.x maintain compatibility with Oracle databases.
 
 4. **Testing**: H2 database for testing continues to work with the new versions without modification.
+
+5. **Security**: CodeQL security scanning completed with no vulnerabilities detected.
 
 ## Recommendations
 
