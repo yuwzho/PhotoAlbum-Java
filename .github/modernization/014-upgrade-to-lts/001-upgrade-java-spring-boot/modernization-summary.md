@@ -102,6 +102,10 @@ mvn clean compile
    - Migrated persistence annotations: javax.persistence.* → jakarta.persistence.*
    - Migrated validation annotations: javax.validation.constraints.* → jakarta.validation.constraints.*
 
+3. **Dockerfile**
+   - Updated build image: maven:3.9.6-eclipse-temurin-8 → maven:3.9.6-eclipse-temurin-21
+   - Updated runtime image: eclipse-temurin:8-jre → eclipse-temurin:21-jre
+
 ## Testing Summary
 
 ### Tests Executed
