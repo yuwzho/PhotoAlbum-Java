@@ -22,7 +22,15 @@
         "passUnitTests": "true",
         "passIntegrationTests": "false"
       },
-      "status": "started"
+      "status": "success",
+      "taskSummary": "Successfully upgraded Java from version 8 to 21 (LTS). Updated pom.xml and Dockerfile configurations. Build passed, all unit tests passed, no security vulnerabilities found.",
+      "successCriteriaStatus": {
+        "passBuild": "true",
+        "generateNewUnitTests": "true",
+        "generateNewIntegrationTests": "false",
+        "passUnitTests": "true",
+        "passIntegrationTests": "false"
+      }
     },
     {
       "type": "upgrade",
@@ -46,7 +54,7 @@
         "passUnitTests": "true",
         "passIntegrationTests": "false"
       },
-      "status": "pending"
+      "status": "started"
     },
     {
       "type": "upgrade",
