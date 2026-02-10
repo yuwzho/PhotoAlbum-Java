@@ -203,7 +203,7 @@ public class PhotoServiceImpl implements PhotoService {
     @Transactional(readOnly = true)
     public Optional<Photo> getPreviousPhoto(Photo currentPhoto) {
         List<Photo> olderPhotos = photoRepository.findPhotosUploadedBefore(currentPhoto.getUploadedAt());
-        return olderPhotos.isEmpty() ? Optional.<Photo>empty() : Optional.of(olderPhotos.get(0));
+        return olderPhotos.isEmpty() ? Optional.empty() : Optional.of(olderPhotos.get(0));
     }
 
     /**
@@ -213,7 +213,7 @@ public class PhotoServiceImpl implements PhotoService {
     @Transactional(readOnly = true)
     public Optional<Photo> getNextPhoto(Photo currentPhoto) {
         List<Photo> newerPhotos = photoRepository.findPhotosUploadedAfter(currentPhoto.getUploadedAt());
-        return newerPhotos.isEmpty() ? Optional.<Photo>empty() : Optional.of(newerPhotos.get(0));
+        return newerPhotos.isEmpty() ? Optional.empty() : Optional.of(newerPhotos.get(0));
     }
 
     /**
