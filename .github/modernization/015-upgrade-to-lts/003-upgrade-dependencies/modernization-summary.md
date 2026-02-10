@@ -1,4 +1,4 @@
-# Dependency Upgrade to Java 21/Spring Boot 3.4 Compatible Versions - Modernization Summary
+# Dependency Upgrade to Java 17/Spring Boot 3.4 Compatible Versions - Modernization Summary
 
 ## Task Information
 - **Task ID**: 003-upgrade-dependencies
