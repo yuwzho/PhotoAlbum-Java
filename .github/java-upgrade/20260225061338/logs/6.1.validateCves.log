@@ -1,0 +1,17 @@
+2026-02-25T06:15:55.805Z [INFO] Some dependencies have been modified or added during the upgrade. start validating CVEs.
+2026-02-25T06:15:55.807Z [INFO] Getting CVEs for dependencies: java:*:21
+2026-02-25T06:15:55.808Z [INFO] getting CVEs for dependencies:
+ - java:*:21...
+2026-02-25T06:15:55.808Z [INFO] getting gitHub access token...
+2026-02-25T06:15:55.809Z [ERROR] Failed to get GitHub access token to validate CVEs for the given dependencies.
+2026-02-25T06:15:55.809Z [INFO] Processing batch 1/1, size: 1
+2026-02-25T06:15:55.810Z [INFO] listing CVEs from GitHub for dependencies [
+  "java:*:21"
+]
+2026-02-25T06:15:56.287Z [INFO] Fetched 0 total advisories across all pages
+2026-02-25T06:15:56.288Z [INFO] grouping CVEs and finding max patched version by dep...
+2026-02-25T06:15:56.289Z [INFO] done getting 0 CVEs for 1 dependencies
+2026-02-25T06:15:56.290Z [INFO] calculating patched version by dep...
+2026-02-25T06:15:56.290Z [INFO] finished getting CVEs for dependencies.
+2026-02-25T06:15:56.290Z [INFO] Found 0 dependencies with known CVEs
+2026-02-25T06:15:56.291Z [INFO] No known CVEs that need to be fixed are found for dependencies: java:*:21

@@ -1,0 +1,12 @@
+2026-02-25T06:15:37.401Z [INFO] [Task.commitChanges](5.1): Committing changes for D:\code\ai\samples\repos\photo-album-java-fork with message: Upgrade Java version to 21 and modernize code syntax
+2026-02-25T06:15:37.911Z [INFO] [appmod/java-upgrade-20260225061338 d32790f] Upgrade Java version to 21 and modernize code syntax
+ 4 files changed, 9 insertions(+), 9 deletions(-)
+
+2026-02-25T06:15:37.977Z [INFO] d32790fc7519dd3ca43169d17db1124e80389f7c
+
+2026-02-25T06:15:38.055Z [INFO] 3	3	pom.xml
+1	1	src/main/java/com/photoalbum/controller/DetailController.java
+1	1	src/main/java/com/photoalbum/controller/PhotoFileController.java
+4	4	src/main/java/com/photoalbum/service/impl/PhotoServiceImpl.java
+
+2026-02-25T06:15:38.098Z [INFO] [Task.commitChanges](5.1): Committed changes for D:\code\ai\samples\repos\photo-album-java-fork with message: Upgrade Java version to 21 and modernize code syntax

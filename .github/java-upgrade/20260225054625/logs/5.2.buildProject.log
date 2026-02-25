@@ -1,0 +1,22 @@
+2026-02-25T05:48:58.752Z [INFO] [BaseBuildTool] Firing config modified event for mvn, sleeping for 5 seconds
+2026-02-25T05:48:58.753Z [INFO] [Environment] Running command (Java 8): mvn --version
+Apache Maven 3.9.11 (3e54c93a704957b63ee3494413a2b544fd3d825b)
+Maven home: C:\ProgramData\chocolatey\lib\maven\apache-maven-3.9.11
+Java version: 1.8.0_481, vendor: Oracle Corporation, runtime: C:\Program Files\Java\jdk1.8.0_481\jre
+Default locale: en_US, platform encoding: Cp1252
+OS name: "windows 11", version: "10.0", arch: "amd64", family: "windows"
+2026-02-25T05:48:59.192Z [INFO] [BaseBuildTool] New version of mvn: 3.9.11 -> 3.9.11
+2026-02-25T05:48:59.192Z [INFO] [MavenBuildTool] Getting Java version of D:\code\ai\samples\repos\photo-album-java-fork from pom.xml
+2026-02-25T05:48:59.193Z [INFO] [MavenBuildTool] Searching for pom.xml files in D:\code\ai\samples\repos\photo-album-java-fork
+2026-02-25T05:48:59.193Z [INFO] [MavenBuildTool] Found pom.xml files: D:\code\ai\samples\repos\photo-album-java-fork\pom.xml
+2026-02-25T05:48:59.194Z [INFO] [MavenBuildTool] Java version found in D:\code\ai\samples\repos\photo-album-java-fork\pom.xml: 21
+2026-02-25T05:48:59.195Z [INFO] [BaseBuildTool] Notifying Java version/Config change: '21' || '21'
+2026-02-25T05:48:59.197Z [INFO] [MavenBuildTool] Getting build errors of D:\code\ai\samples\repos\photo-album-java-fork using Maven
+2026-02-25T05:48:59.198Z [INFO] [Environment] Running command (Java 21): mvn clean test-compile -q -B -fn
+2026-02-25T05:49:04.180Z [INFO] [MavenBuildTool] parsing compilation errors.
+2026-02-25T05:49:04.181Z [INFO] [BaseBuildTool] Found 1 modules: .
+2026-02-25T05:49:04.189Z [INFO] [BaseBuildTool] Finish counting Java and class files
+2026-02-25T05:49:04.189Z [INFO] [MavenBuildTool] Cleaning D:\code\ai\samples\repos\photo-album-java-fork using Maven
+2026-02-25T05:49:04.190Z [INFO] [Environment] Running command (Java 21): mvn clean -q -B -fn
+2026-02-25T05:49:06.260Z [INFO] Build succeeded! There are no build errors in the project.
+2026-02-25T05:49:06.263Z [INFO] Build project completed. Looking for next task...
