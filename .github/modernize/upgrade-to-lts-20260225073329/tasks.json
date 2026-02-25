@@ -1,0 +1,79 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "description": "Tasks template for modernization plan. Generate this file alongside plan.md to track individual migration tasks.",
+  "tasks": [
+    {
+      "type": "upgrade",
+      "id": "001-upgrade-java-to-21",
+      "description": "Upgrade Java to version 21 (LTS)",
+      "requirements": "Upgrade JDK to version 21 (latest LTS), update build configuration, and address any API changes or deprecations",
+      "dependencies": [],
+      "environmentConfiguration": null,
+      "skills": [
+        {
+          "name": "java-version-upgrade",
+          "location": "builtin"
+        }
+      ],
+      "successCriteria": {
+        "passBuild": "true",
+        "generateNewUnitTests": "false",
+        "generateNewIntegrationTests": "false",
+        "passUnitTests": "true",
+        "passIntegrationTests": "false",
+        "securityComplianceCheck": "false"
+      },
+      "status": "success",
+      "summary": "Successfully upgraded Java from version 8 to 21 (LTS). Updated pom.xml configuration, applied OpenRewrite migrations for code modernization, and validated with successful build and passing unit tests. No CVE issues introduced.",
+      "successCriteriaStatus": {
+        "passBuild": "passed",
+        "generateNewUnitTests": "not_required",
+        "generateNewIntegrationTests": "not_required",
+        "passUnitTests": "passed",
+        "passIntegrationTests": "not_required",
+        "securityComplianceCheck": "not_required"
+      }
+    },
+    {
+      "type": "upgrade",
+      "id": "002-upgrade-spring-boot-to-3.4",
+      "description": "Upgrade Spring Boot to version 3.4",
+      "requirements": "Upgrade Spring Boot to 3.4, Spring Framework to 6.x, migrate javax.* packages to jakarta.*, and update related dependencies",
+      "dependencies": [
+        "001-upgrade-java-to-21"
+      ],
+      "environmentConfiguration": null,
+      "skills": [
+        {
+          "name": "java-version-upgrade",
+          "location": "builtin"
+        }
+      ],
+      "successCriteria": {
+        "passBuild": "true",
+        "generateNewUnitTests": "false",
+        "generateNewIntegrationTests": "false",
+        "passUnitTests": "true",
+        "passIntegrationTests": "false",
+        "securityComplianceCheck": "false"
+      },
+      "status": "success",
+      "summary": "Successfully upgraded Spring Boot from 2.7.18 to 3.4.2 and Spring Framework to 6.x. Migrated javax.* packages to jakarta.* namespace. All builds and unit tests passing. Code changes committed to branch.",
+      "successCriteriaStatus": {
+        "passBuild": "passed",
+        "generateNewUnitTests": "not_required",
+        "generateNewIntegrationTests": "not_required",
+        "passUnitTests": "passed",
+        "passIntegrationTests": "not_required",
+        "securityComplianceCheck": "not_required"
+      }
+    }
+  ],
+  "metadata": {
+    "planName": "upgrade-to-lts",
+    "projectName": "application",
+    "language": "java",
+    "createdAt": "2026-02-25T07:33:33.473Z",
+    "version": "1.0"
+  }
+}
