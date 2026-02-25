@@ -23,7 +23,16 @@
         "passIntegrationTests": "false",
         "securityComplianceCheck": "false"
       },
-      "status": "started"
+      "status": "success",
+      "taskSummary": "Upgraded Java from 1.8 to 21 (LTS). Updated pom.xml compiler source/target and java.version to 21. Spring Boot upgraded from 2.7.18 to 3.3.5 to support Java 21 (Spring Boot 2.7.x does not officially support Java 21). Migrated javax.* to jakarta.* namespace in Photo.java. Updated Dockerfile to use eclipse-temurin:21. Build and unit tests pass successfully.",
+      "successCriteriaStatus": {
+        "passBuild": "true",
+        "generateNewUnitTests": "false",
+        "generateNewIntegrationTests": "false",
+        "passUnitTests": "true",
+        "passIntegrationTests": "false",
+        "securityComplianceCheck": "false"
+      }
     },
     {
       "type": "upgrade",
@@ -48,7 +57,16 @@
         "passIntegrationTests": "false",
         "securityComplianceCheck": "false"
       },
-      "status": "pending"
+      "status": "success",
+      "taskSummary": "Upgraded Spring Boot from 3.3.5 to 3.4.7 (latest stable 3.4.x). jakarta.* namespace was already migrated in task 001. Build passes and unit tests pass.",
+      "successCriteriaStatus": {
+        "passBuild": "true",
+        "generateNewUnitTests": "false",
+        "generateNewIntegrationTests": "false",
+        "passUnitTests": "true",
+        "passIntegrationTests": "false",
+        "securityComplianceCheck": "false"
+      }
     }
   ],
   "metadata": {
