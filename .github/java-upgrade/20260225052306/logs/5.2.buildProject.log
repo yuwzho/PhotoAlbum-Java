@@ -1,0 +1,22 @@
+2026-02-25T05:25:58.165Z [INFO] [BaseBuildTool] Firing config modified event for mvn, sleeping for 5 seconds
+2026-02-25T05:25:58.165Z [INFO] [Environment] Running command (Java 21): mvn --version
+Apache Maven 3.9.11 (3e54c93a704957b63ee3494413a2b544fd3d825b)
+Maven home: C:\ProgramData\chocolatey\lib\maven\apache-maven-3.9.11
+Java version: 21.0.10, vendor: Oracle Corporation, runtime: C:\Program Files\Java\jdk-21.0.10
+Default locale: en_US, platform encoding: UTF-8
+OS name: "windows 11", version: "10.0", arch: "amd64", family: "windows"
+2026-02-25T05:25:58.643Z [INFO] [BaseBuildTool] New version of mvn: 3.9.11 -> 3.9.11
+2026-02-25T05:25:58.644Z [INFO] [MavenBuildTool] Getting Java version of D:\code\ai\samples\repos\photo-album-java-fork from pom.xml
+2026-02-25T05:25:58.645Z [INFO] [MavenBuildTool] Searching for pom.xml files in D:\code\ai\samples\repos\photo-album-java-fork
+2026-02-25T05:25:58.645Z [INFO] [MavenBuildTool] Found pom.xml files: D:\code\ai\samples\repos\photo-album-java-fork\pom.xml
+2026-02-25T05:25:58.647Z [INFO] [MavenBuildTool] Java version found in D:\code\ai\samples\repos\photo-album-java-fork\pom.xml: 21
+2026-02-25T05:25:58.647Z [INFO] [BaseBuildTool] Notifying Java version/Config change: '21' || '21'
+2026-02-25T05:25:58.650Z [INFO] [MavenBuildTool] Getting build errors of D:\code\ai\samples\repos\photo-album-java-fork using Maven
+2026-02-25T05:25:58.651Z [INFO] [Environment] Running command (Java 21): mvn clean test-compile -q -B -fn
+2026-02-25T05:26:18.592Z [INFO] [MavenBuildTool] parsing compilation errors.
+2026-02-25T05:26:18.592Z [INFO] [BaseBuildTool] Found 1 modules: .
+2026-02-25T05:26:18.601Z [INFO] [BaseBuildTool] Finish counting Java and class files
+2026-02-25T05:26:18.601Z [INFO] [MavenBuildTool] Cleaning D:\code\ai\samples\repos\photo-album-java-fork using Maven
+2026-02-25T05:26:18.602Z [INFO] [Environment] Running command (Java 21): mvn clean -q -B -fn
+2026-02-25T05:26:20.737Z [INFO] Build succeeded! There are no build errors in the project.
+2026-02-25T05:26:20.740Z [INFO] Build project completed. Looking for next task...

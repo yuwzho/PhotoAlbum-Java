@@ -1,0 +1,33 @@
+2026-02-25T05:27:12.904Z [INFO] Some dependencies have been modified or added during the upgrade. start validating CVEs.
+2026-02-25T05:27:12.906Z [INFO] Getting CVEs for dependencies: org.springframework.boot:spring-boot-starter-web:3.4.2:jar,org.springframework.boot:spring-boot-starter-thymeleaf:3.4.2:jar,org.springframework.boot:spring-boot-starter-data-jpa:3.4.2:jar,com.oracle.database.jdbc:ojdbc8:23.5.0.24.07:jar,org.springframework.boot:spring-boot-starter-validation:3.4.2:jar,org.springframework.boot:spring-boot-starter-json:3.4.2:jar,org.springframework.boot:spring-boot-starter-test:3.4.2:jar,com.h2database:h2:2.3.232:jar,org.springframework.boot:spring-boot-devtools:3.4.2:jar
+2026-02-25T05:27:12.907Z [INFO] getting CVEs for dependencies:
+ - org.springframework.boot:spring-boot-starter-web:3.4.2:jar
+  - org.springframework.boot:spring-boot-starter-thymeleaf:3.4.2:jar
+  - org.springframework.boot:spring-boot-starter-data-jpa:3.4.2:jar
+  - com.oracle.database.jdbc:ojdbc8:23.5.0.24.07:jar
+  - org.springframework.boot:spring-boot-starter-validation:3.4.2:jar
+  - org.springframework.boot:spring-boot-starter-json:3.4.2:jar
+  - org.springframework.boot:spring-boot-starter-test:3.4.2:jar
+  - com.h2database:h2:2.3.232:jar
+  - org.springframework.boot:spring-boot-devtools:3.4.2:jar...
+2026-02-25T05:27:12.908Z [INFO] getting gitHub access token...
+2026-02-25T05:27:12.908Z [ERROR] Failed to get GitHub access token to validate CVEs for the given dependencies.
+2026-02-25T05:27:12.908Z [INFO] Processing batch 1/1, size: 9
+2026-02-25T05:27:12.909Z [INFO] listing CVEs from GitHub for dependencies [
+  "org.springframework.boot:spring-boot-starter-web:3.4.2:jar",
+  "org.springframework.boot:spring-boot-starter-thymeleaf:3.4.2:jar",
+  "org.springframework.boot:spring-boot-starter-data-jpa:3.4.2:jar",
+  "com.oracle.database.jdbc:ojdbc8:23.5.0.24.07:jar",
+  "org.springframework.boot:spring-boot-starter-validation:3.4.2:jar",
+  "org.springframework.boot:spring-boot-starter-json:3.4.2:jar",
+  "org.springframework.boot:spring-boot-starter-test:3.4.2:jar",
+  "com.h2database:h2:2.3.232:jar",
+  "org.springframework.boot:spring-boot-devtools:3.4.2:jar"
+]
+2026-02-25T05:27:13.380Z [INFO] Fetched 0 total advisories across all pages
+2026-02-25T05:27:13.382Z [INFO] grouping CVEs and finding max patched version by dep...
+2026-02-25T05:27:13.384Z [INFO] done getting 0 CVEs for 9 dependencies
+2026-02-25T05:27:13.386Z [INFO] calculating patched version by dep...
+2026-02-25T05:27:13.387Z [INFO] finished getting CVEs for dependencies.
+2026-02-25T05:27:13.389Z [INFO] Found 0 dependencies with known CVEs
+2026-02-25T05:27:13.391Z [INFO] No known CVEs that need to be fixed are found for dependencies: org.springframework.boot:spring-boot-starter-web:3.4.2:jar,org.springframework.boot:spring-boot-starter-thymeleaf:3.4.2:jar,org.springframework.boot:spring-boot-starter-data-jpa:3.4.2:jar,com.oracle.database.jdbc:ojdbc8:23.5.0.24.07:jar,org.springframework.boot:spring-boot-starter-validation:3.4.2:jar,org.springframework.boot:spring-boot-starter-json:3.4.2:jar,org.springframework.boot:spring-boot-starter-test:3.4.2:jar,com.h2database:h2:2.3.232:jar,org.springframework.boot:spring-boot-devtools:3.4.2:jar

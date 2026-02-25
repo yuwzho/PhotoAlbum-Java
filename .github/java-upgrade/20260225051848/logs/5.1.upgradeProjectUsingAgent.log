@@ -1,0 +1,12 @@
+2026-02-25T05:20:48.212Z [INFO] [Task.commitChanges](5.1): Committing changes for D:\code\ai\samples\repos\photo-album-java-fork with message: Upgrade Java version from 8 to 21 in pom.xml
+2026-02-25T05:20:49.205Z [INFO] [appmod/java-upgrade-20260225051848 e78e15a] Upgrade Java version from 8 to 21 in pom.xml
+ 4 files changed, 9 insertions(+), 9 deletions(-)
+
+2026-02-25T05:20:49.269Z [INFO] e78e15a0cca733faab4fed7d6c4a83df42924f7f
+
+2026-02-25T05:20:49.347Z [INFO] 3	3	pom.xml
+1	1	src/main/java/com/photoalbum/controller/DetailController.java
+1	1	src/main/java/com/photoalbum/controller/PhotoFileController.java
+4	4	src/main/java/com/photoalbum/service/impl/PhotoServiceImpl.java
+
+2026-02-25T05:20:49.364Z [INFO] [Task.commitChanges](5.1): Committed changes for D:\code\ai\samples\repos\photo-album-java-fork with message: Upgrade Java version from 8 to 21 in pom.xml
