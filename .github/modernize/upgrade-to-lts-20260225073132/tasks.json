@@ -23,7 +23,16 @@
         "passIntegrationTests": "false",
         "securityComplianceCheck": "false"
       },
-      "status": "started"
+      "status": "success",
+      "taskSummary": "Updated java.version, maven.compiler.source, and maven.compiler.target from 1.8/8 to 21 in pom.xml. No source code changes required. Build and tests pass.",
+      "successCriteriaStatus": {
+        "passBuild": "true",
+        "generateNewUnitTests": "false",
+        "generateNewIntegrationTests": "false",
+        "passUnitTests": "true",
+        "passIntegrationTests": "false",
+        "securityComplianceCheck": "false"
+      }
     },
     {
       "type": "upgrade",
@@ -46,7 +55,16 @@
         "passIntegrationTests": "false",
         "securityComplianceCheck": "false"
       },
-      "status": "pending"
+      "status": "success",
+      "taskSummary": "Upgraded Spring Boot from 2.7.18 to 3.4.1 (Spring Framework 6.2.x, Hibernate 6.6.x). Migrated javax.persistence.* and javax.validation.constraints.* to jakarta.* namespace in Photo.java. javax.imageio (Java SE) left unchanged. Build and tests pass.",
+      "successCriteriaStatus": {
+        "passBuild": "true",
+        "generateNewUnitTests": "false",
+        "generateNewIntegrationTests": "false",
+        "passUnitTests": "true",
+        "passIntegrationTests": "false",
+        "securityComplianceCheck": "false"
+      }
     },
     {
       "type": "upgrade",
@@ -69,7 +87,16 @@
         "passIntegrationTests": "false",
         "securityComplianceCheck": "true"
       },
-      "status": "pending"
+      "status": "success",
+      "taskSummary": "Replaced ojdbc8 with ojdbc11 (Java 21 / JDBC 4.3 compatible). Upgraded commons-io from 2.11.0 to 2.18.0 (latest, security fixes). Pinned H2 to 2.3.232 explicitly. Build and tests pass. Security compliance verified.",
+      "successCriteriaStatus": {
+        "passBuild": "true",
+        "generateNewUnitTests": "false",
+        "generateNewIntegrationTests": "false",
+        "passUnitTests": "true",
+        "passIntegrationTests": "false",
+        "securityComplianceCheck": "true"
+      }
     }
   ],
   "metadata": {
