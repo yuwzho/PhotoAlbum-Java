@@ -1,0 +1,14 @@
+2026-02-25T09:08:55.629Z [INFO] [Task.commitChanges](5.1): Committing changes for D:\code\ai\samples\repos\photo-album-java-fork with message: Applied OpenRewrite recipes to upgrade Spring Boot to 3.3.13 and Java to 21
+2026-02-25T09:08:56.538Z [INFO] [upgrade-to-lts-20260225090445 a861c76] Applied OpenRewrite recipes to upgrade Spring Boot to 3.3.13 and Java to 21
+ 6 files changed, 16 insertions(+), 16 deletions(-)
+
+2026-02-25T09:08:56.604Z [INFO] a861c768bf7741e83b78315c5e90cd679f909344
+
+2026-02-25T09:08:56.683Z [INFO] 4	4	pom.xml
+1	1	src/main/java/com/photoalbum/controller/DetailController.java
+1	1	src/main/java/com/photoalbum/controller/HomeController.java
+1	1	src/main/java/com/photoalbum/controller/PhotoFileController.java
+5	5	src/main/java/com/photoalbum/model/Photo.java
+4	4	src/main/java/com/photoalbum/service/impl/PhotoServiceImpl.java
+
+2026-02-25T09:08:56.700Z [INFO] [Task.commitChanges](5.1): Committed changes for D:\code\ai\samples\repos\photo-album-java-fork with message: Applied OpenRewrite recipes to upgrade Spring Boot to 3.3.13 and Java to 21
