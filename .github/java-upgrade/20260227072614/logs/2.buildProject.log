@@ -1,0 +1,15 @@
+2026-02-27T07:28:48.141Z [INFO] [BaseBuildTool] Firing config modified event for mvn, sleeping for 5 seconds
+2026-02-27T07:28:48.141Z [INFO] [Environment] Running command (Java 21): mvn --version
+Apache Maven 3.9.11 (3e54c93a704957b63ee3494413a2b544fd3d825b)
+Maven home: C:\ProgramData\chocolatey\lib\maven\apache-maven-3.9.11
+Java version: 21.0.10, vendor: Oracle Corporation, runtime: C:\Program Files\Java\jdk-21.0.10
+Default locale: en_US, platform encoding: UTF-8
+OS name: "windows 11", version: "10.0", arch: "amd64", family: "windows"
+2026-02-27T07:28:48.637Z [INFO] [BaseBuildTool] New version of mvn: 3.9.11 -> 3.9.11
+2026-02-27T07:28:48.637Z [INFO] [MavenBuildTool] Getting Java version of D:\code\ai\samples\repos\photo-album-java-fork from pom.xml
+2026-02-27T07:28:48.639Z [INFO] [MavenBuildTool] Searching for pom.xml files in D:\code\ai\samples\repos\photo-album-java-fork
+2026-02-27T07:28:48.639Z [INFO] [MavenBuildTool] Found pom.xml files: D:\code\ai\samples\repos\photo-album-java-fork\pom.xml
+2026-02-27T07:28:48.640Z [INFO] [MavenBuildTool] Java version found in D:\code\ai\samples\repos\photo-album-java-fork\pom.xml: 21
+2026-02-27T07:28:48.641Z [INFO] [BaseBuildTool] Notifying Java version/Config change: '21' || '21'
+2026-02-27T07:28:48.644Z [INFO] [MavenBuildTool] Getting build errors of D:\code\ai\samples\repos\photo-album-java-fork using Maven
+2026-02-27T07:28:48.645Z [INFO] [Environment] Running command (Java 21): mvn clean test-compile -q -B -fn
