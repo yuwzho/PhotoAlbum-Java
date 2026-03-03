@@ -1,0 +1,7 @@
+2026-03-02T15:25:44.022Z [INFO] [MavenBuildTool] Getting build errors of C:\code\samples\repos\photo-album-java-fork using Maven
+2026-03-02T15:25:44.023Z [INFO] [Environment] Running command (Java 21): mvn clean test-compile -q -B -fn
+2026-03-02T15:25:51.187Z [INFO] [MavenBuildTool] parsing compilation errors.
+2026-03-02T15:25:51.187Z [INFO] [BaseBuildTool] Found 1 modules: .
+2026-03-02T15:25:51.199Z [INFO] [BaseBuildTool] Finish counting Java and class files
+2026-03-02T15:25:51.199Z [INFO] [MavenBuildTool] Cleaning C:\code\samples\repos\photo-album-java-fork using Maven
+2026-03-02T15:25:51.200Z [INFO] [Environment] Running command (Java 21): mvn clean -q -B -fn

@@ -22,7 +22,8 @@
           { "$ref": "#/$defs/transformTask" },
           { "$ref": "#/$defs/upgradeTask" },
           { "$ref": "#/$defs/containerizationTask" },
-          { "$ref": "#/$defs/deploymentTask" }
+          { "$ref": "#/$defs/deploymentTask" },
+          { "$ref": "#/$defs/infrastructureTask" }
         ]
       }
     },
@@ -112,7 +113,7 @@
       "properties": {
         "name": {
           "type": "string",
-          "description": "[The skill name that will be used for this task, e.g., 'migration-rabbitmq-to-servicebus']"
+          "description": "[The skill name that will be used for this task, e.g., 'migration-rabbitmq-to-servicebus'.]"
         },
         "location": {
           "type": "string",
@@ -129,7 +130,8 @@
         "generateNewUnitTests",
         "generateNewIntegrationTests",
         "passUnitTests",
-        "passIntegrationTests"
+        "passIntegrationTests",
+        "securityComplianceCheck"
       ],
       "description": "The task success criteria to validate after task execution.",
       "properties": {
@@ -157,6 +159,11 @@
           "type": ["string", "null"],
           "default": "false",
           "description": "Integration tests must pass when generated. With Azure resources: validates actual connectivity. Without: validates integration logic using mocked clients, use default value if user does not specify"
+        },
+        "securityComplianceCheck": {
+          "type": ["string", "null"],
+          "default": "false",
+          "description": "No known CVEs exist in project dependencies, use default value if user does not specify"
         }
       }
     },
@@ -184,6 +191,10 @@
         "passIntegrationTests": {
           "type": ["string", "null"],
           "description": "Validation status of passIntegrationTests criterion. true means passed, false means failed, null means not yet validated."
+        },
+        "securityComplianceCheck": {
+          "type": ["boolean", "null"],
+          "description": "Validation status of securityComplianceCheck criterion. true means passed, false means failed, null means not yet validated."
         }
       }
     },
@@ -277,6 +288,36 @@
               "type": "string",
               "description": "Deployment tool name.",
               "const": "bicep"
+            }
+          }
+        }
+      ]
+    },
+    "infrastructureTask": {
+      "allOf": [
+        { "$ref": "#/$defs/taskBase" },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["type", "skills", "iacType", "provision"],
+          "properties": {
+            "type": {
+              "const": "infrastructure",
+              "description": "Infrastructure task template - Generate IaC files (Bicep or Terraform) to provision Azure resources."
+            },
+            "skills": {
+              "type": "array",
+              "description": "The skill used for this task, e.g., 'infrastructure-bicep-generation' or 'infrastructure-terraform-generation'",
+              "items": { "$ref": "#/$defs/skill" }
+            },
+            "iacType": {
+              "type": "string",
+              "description": "Infrastructure as Code tool type.",
+              "enum": ["bicep", "terraform"]
+            },
+            "provision": {
+              "type": "boolean",
+              "description": "Whether to provision Azure resources after generating IaC files."
             }
           }
         }

@@ -1,0 +1,9 @@
+2026-03-02T15:21:01.062Z [INFO] [Task.commitChanges](5.1): Committing changes for C:\code\samples\repos\photo-album-java-fork with message: Upgrade Java source/target from 8 to 21 in pom.xml
+2026-03-02T15:21:01.291Z [INFO] [appmod/java-upgrade-20260302151843 daa97ce] Upgrade Java source/target from 8 to 21 in pom.xml
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+
+2026-03-02T15:21:01.363Z [INFO] daa97ce545f986c8c4419b82956da8f8e669e90d
+
+2026-03-02T15:21:01.448Z [INFO] 3	3	pom.xml
+
+2026-03-02T15:21:01.470Z [INFO] [Task.commitChanges](5.1): Committed changes for C:\code\samples\repos\photo-album-java-fork with message: Upgrade Java source/target from 8 to 21 in pom.xml

@@ -1,0 +1,16 @@
+2026-03-02T15:30:53.006Z [INFO] [Task.commitChanges](7.1): Committing changes for C:\code\samples\repos\photo-album-java-fork with message: Upgrade Spring Boot from 3.3.13 to 3.4.5
+2026-03-02T15:30:53.265Z [INFO] [appmod/java-upgrade-20260302152433 a228109] Upgrade Spring Boot from 3.3.13 to 3.4.5
+ 7 files changed, 18 insertions(+), 11 deletions(-)
+ create mode 100644 rewrite.yml
+
+2026-03-02T15:30:53.337Z [INFO] a228109d7069a4f320834d9e852a7be6b49f5e4e
+
+2026-03-02T15:30:53.422Z [INFO] 1	1	pom.xml
+7	0	rewrite.yml
+1	1	src/main/java/com/photoalbum/controller/DetailController.java
+1	1	src/main/java/com/photoalbum/controller/HomeController.java
+1	1	src/main/java/com/photoalbum/controller/PhotoFileController.java
+5	5	src/main/java/com/photoalbum/model/Photo.java
+2	2	src/main/java/com/photoalbum/service/impl/PhotoServiceImpl.java
+
+2026-03-02T15:30:53.444Z [INFO] [Task.commitChanges](7.1): Committed changes for C:\code\samples\repos\photo-album-java-fork with message: Upgrade Spring Boot from 3.3.13 to 3.4.5
