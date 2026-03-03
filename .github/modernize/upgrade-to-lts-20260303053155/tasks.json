@@ -22,7 +22,16 @@
         "passIntegrationTests": "false",
         "securityComplianceCheck": "false"
       },
-      "status": "pending"
+      "status": "success",
+      "taskSummary": "Successfully upgraded to Java 21 and Spring Boot 3.4.3. Updated pom.xml with Java 21 and Spring Boot 3.4.3. Migrated javax.persistence.* and javax.validation.* to jakarta.* namespace in Photo.java. Added spring.jpa.open-in-view=false to application.properties. Removed explicit H2Dialect from test properties (auto-detected in Hibernate 6). Build succeeded and all unit tests pass.",
+      "successCriteriaStatus": {
+        "passBuild": "true",
+        "generateNewUnitTests": "false",
+        "generateNewIntegrationTests": "false",
+        "passUnitTests": "true",
+        "passIntegrationTests": "false",
+        "securityComplianceCheck": null
+      }
     }
   ],
   "metadata": {
