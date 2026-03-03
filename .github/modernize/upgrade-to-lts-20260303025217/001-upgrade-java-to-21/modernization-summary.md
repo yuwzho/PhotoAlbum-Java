@@ -19,7 +19,7 @@ Updated the Java compiler properties from Java 8 to Java 21:
 
 ### Deprecated / Breaking APIs
 - No deprecated or breaking API changes were identified in the source code for the Java 8 → Java 21 migration.
-- The `javax.persistence.*` and `javax.validation.*` imports remain valid under Spring Boot 2.7.18 (which uses the `javax` namespace, not `jakarta`). A migration to `jakarta.*` would only be required if upgrading to Spring Boot 3.x.
+- The `javax.persistence.*` and `javax.validation.*` imports in `Photo.java` have been migrated to `jakarta.*` as part of the subsequent Spring Boot 3.4 upgrade (task 002-upgrade-spring-boot-to-3.4).
 - `javax.imageio.ImageIO` (used in `PhotoServiceImpl`) is available in the `java.desktop` module in Java 21.
 
 ### Build Result

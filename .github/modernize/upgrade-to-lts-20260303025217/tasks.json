@@ -23,7 +23,16 @@
         "passIntegrationTests": "false",
         "securityComplianceCheck": "false"
       },
-      "status": "completed"
+      "status": "success",
+      "taskSummary": "Upgraded Java from 1.8 to 21 by updating pom.xml properties (java.version, maven.compiler.source, maven.compiler.target). Build and unit tests pass successfully.",
+      "successCriteriaStatus": {
+        "passBuild": "true",
+        "generateNewUnitTests": "false",
+        "generateNewIntegrationTests": "false",
+        "passUnitTests": "true",
+        "passIntegrationTests": "false",
+        "securityComplianceCheck": "false"
+      }
     },
     {
       "type": "upgrade",
@@ -48,7 +57,7 @@
         "passIntegrationTests": "false",
         "securityComplianceCheck": "false"
       },
-      "status": "pending"
+      "status": "started"
     },
     {
       "type": "upgrade",
