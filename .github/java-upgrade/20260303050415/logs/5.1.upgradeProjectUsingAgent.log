@@ -1,0 +1,12 @@
+2026-03-03T05:05:58.737Z [INFO] [Task.commitChanges](5.1): Committing changes for D:\code\ai\samples\repos\photo-album-java-fork with message: Apply OpenRewrite UpgradeToJava21 recipe to upgrade project from Java 8 to Java 21
+2026-03-03T05:05:59.214Z [INFO] [main 9d0b74c] Apply OpenRewrite UpgradeToJava21 recipe to upgrade project from Java 8 to Java 21
+ 4 files changed, 9 insertions(+), 9 deletions(-)
+
+2026-03-03T05:05:59.280Z [INFO] 9d0b74caa756f5b10cf866b76c4929bcfb5c0625
+
+2026-03-03T05:05:59.368Z [INFO] 3	3	pom.xml
+1	1	src/main/java/com/photoalbum/controller/DetailController.java
+1	1	src/main/java/com/photoalbum/controller/PhotoFileController.java
+4	4	src/main/java/com/photoalbum/service/impl/PhotoServiceImpl.java
+
+2026-03-03T05:05:59.385Z [INFO] [Task.commitChanges](5.1): Committed changes for D:\code\ai\samples\repos\photo-album-java-fork with message: Apply OpenRewrite UpgradeToJava21 recipe to upgrade project from Java 8 to Java 21
