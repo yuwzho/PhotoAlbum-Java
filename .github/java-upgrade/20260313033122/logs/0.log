@@ -1,0 +1,28 @@
+2026-03-13T03:31:22.113Z [INFO] ----------------------invoke generate_upgrade_plan----------------------
+2026-03-13T03:31:22.113Z [INFO] [Tool.invoke]({name: generate_upgrade_plan, input: {
+  "projectPath": "D:\\code\\ai\\samples\\repos\\photo-album-java-fork",
+  "javaVersion": "1.8",
+  "targetJavaVersion": "21",
+  "targetDependencies": [
+    "org.springframework.boot:*:3.4.7"
+  ],
+  "useCurrentBranch": true
+}}).
+2026-03-13T03:31:22.114Z [INFO] [Plan.tryStartTask]({tool:generate_upgrade_plan, nextTask:{type:undefined, tool:undefined}}
+2026-03-13T03:31:22.114Z [INFO] [Plan.tryStartTask]: no next task, create new one.
+2026-03-13T03:31:22.115Z [INFO] [Plan.createTaskAtStart]({tool: generate_upgrade_plan, input: {
+  "projectPath": "D:\\code\\ai\\samples\\repos\\photo-album-java-fork",
+  "javaVersion": "1.8",
+  "targetJavaVersion": "21",
+  "targetDependencies": [
+    "org.springframework.boot:*:3.4.7"
+  ],
+  "useCurrentBranch": true,
+  "sessionId": "20260313033122"
+}}).
+2026-03-13T03:31:22.116Z [INFO] [Plan.tryStartTask]: starting task generatePlan
+2026-03-13T03:31:22.117Z [INFO] [Task.start](): Starting task generatePlan
+2026-03-13T03:31:22.118Z [INFO] [Task.start](1): Started task generatePlan
+2026-03-13T03:31:22.239Z [INFO] [Tool.invoke] validate GitHub Copilot license.
+2026-03-13T03:31:22.241Z [INFO] [Tool.invoke] do pre-invoke.
+2026-03-13T03:31:22.242Z [INFO] [Tool.invoke] do invoke.

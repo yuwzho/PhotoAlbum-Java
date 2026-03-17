@@ -1,0 +1,65 @@
+2026-03-13T03:31:22.243Z [INFO] Initializing project configuration...
+2026-03-13T03:31:22.245Z [INFO] Project D:\code\ai\samples\repos\photo-album-java-fork is a maven project, try to get java version from pom.xml
+2026-03-13T03:31:22.248Z [INFO] Project java version: 8
+2026-03-13T03:31:22.249Z [INFO] Maven project detected.
+2026-03-13T03:31:22.249Z [INFO] Build tool type: mvn
+2026-03-13T03:31:22.314Z [INFO] [Environment] Running command (Java 8): java -version
+java version "1.8.0_481"
+Java(TM) SE Runtime Environment (build 1.8.0_481-b10)
+Java HotSpot(TM) 64-Bit Server VM (build 25.481-b10, mixed mode)
+2026-03-13T03:31:22.537Z [INFO] [JdkEnvironment] Got real Java version: 1.8.0_481
+2026-03-13T03:31:22.538Z [INFO] JDK: {
+  "name": "java",
+  "path": "C:\\Program Files\\Java\\jdk1.8.0_481\\bin",
+  "version": "8"
+}
+2026-03-13T03:31:22.559Z [INFO] [Environment] Running command (Java 8): mvn --version
+Apache Maven 3.9.11 (3e54c93a704957b63ee3494413a2b544fd3d825b)
+Maven home: C:\ProgramData\chocolatey\lib\maven\apache-maven-3.9.11
+Java version: 1.8.0_481, vendor: Oracle Corporation, runtime: C:\Program Files\Java\jdk1.8.0_481\jre
+Default locale: en_US, platform encoding: Cp1252
+OS name: "windows 11", version: "10.0", arch: "amd64", family: "windows"
+2026-03-13T03:31:23.156Z [INFO] Real build tool version: 3.9.11
+2026-03-13T03:31:23.157Z [INFO] Build tool: {
+  "name": "mvn",
+  "path": "C:\\ProgramData\\chocolatey\\lib\\maven\\apache-maven-3.9.11\\bin",
+  "version": "3.9.11"
+}
+2026-03-13T03:31:23.157Z [INFO] Project config: {
+  "buildTool": {
+    "path": "C:\\ProgramData\\chocolatey\\lib\\maven\\apache-maven-3.9.11\\bin",
+    "name": "mvn",
+    "version": "3.9.11"
+  },
+  "jdk": {
+    "path": "C:\\Program Files\\Java\\jdk1.8.0_481\\bin",
+    "version": "8",
+    "name": "java"
+  },
+  "name": "photo-album-java-fork",
+  "dir": "D:\\code\\ai\\samples\\repos\\photo-album-java-fork"
+}
+2026-03-13T03:31:23.158Z [INFO] Project configuration initialized: {
+  "buildTool": {
+    "path": "C:\\ProgramData\\chocolatey\\lib\\maven\\apache-maven-3.9.11\\bin",
+    "name": "mvn",
+    "version": "3.9.11"
+  },
+  "jdk": {
+    "path": "C:\\Program Files\\Java\\jdk1.8.0_481\\bin",
+    "version": "8",
+    "name": "java"
+  },
+  "name": "photo-album-java-fork",
+  "dir": "D:\\code\\ai\\samples\\repos\\photo-album-java-fork"
+}
+2026-03-13T03:31:23.158Z [INFO] Initializing upgrade goals...
+2026-03-13T03:31:23.164Z [INFO] [Environment] Running command (Java 8): mvn dependency:tree -B
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ---------------------< com.photoalbum:photo-album >---------------------
+[INFO] Building Photo Album 1.0.0
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- dependency:3.3.0:tree (default-cli) @ photo-album ---

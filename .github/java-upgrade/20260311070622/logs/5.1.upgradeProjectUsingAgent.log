@@ -1,0 +1,14 @@
+2026-03-11T07:08:51.053Z [INFO] [Task.commitChanges](5.1): Committing changes for D:\code\ai\samples\repos\photo-album-java-fork with message: Upgrade to Spring Boot 3.3.13 and Java 21 with javax to jakarta migration
+2026-03-11T07:08:51.394Z [INFO] [app-modernize-20260311070358 8aa4183] Upgrade to Spring Boot 3.3.13 and Java 21 with javax to jakarta migration
+ 6 files changed, 16 insertions(+), 16 deletions(-)
+
+2026-03-11T07:08:51.461Z [INFO] 8aa41838cd07228f41779e489d1e5478b12dee3e
+
+2026-03-11T07:08:51.545Z [INFO] 4	4	pom.xml
+1	1	src/main/java/com/photoalbum/controller/DetailController.java
+1	1	src/main/java/com/photoalbum/controller/HomeController.java
+1	1	src/main/java/com/photoalbum/controller/PhotoFileController.java
+5	5	src/main/java/com/photoalbum/model/Photo.java
+4	4	src/main/java/com/photoalbum/service/impl/PhotoServiceImpl.java
+
+2026-03-11T07:08:51.563Z [INFO] [Task.commitChanges](5.1): Committed changes for D:\code\ai\samples\repos\photo-album-java-fork with message: Upgrade to Spring Boot 3.3.13 and Java 21 with javax to jakarta migration
