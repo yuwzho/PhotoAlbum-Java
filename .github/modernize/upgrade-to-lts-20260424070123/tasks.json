@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "description": "Upgrade plan to migrate project to Java 17",
+  "tasks": [
+    {
+      "type": "upgrade",
+      "id": "001-upgrade-java-17",
+      "description": "Upgrade to Java 17",
+      "reason": "Java 17 is a Long-Term Support (LTS) release with significant language improvements, new APIs, and performance enhancements over older versions.",
+      "requirements": "Upgrade JDK to Java 17. Update build configuration (pom.xml or build.gradle) to target Java 17. Address any deprecated or removed APIs. Ensure all dependencies are compatible with Java 17.",
+      "skills": [
+        {
+          "name": "java-version-upgrade",
+          "location": "builtin"
+        }
+      ],
+      "successCriteria": {
+        "passBuild": "true",
+        "generateNewUnitTests": "false",
+        "passUnitTests": "true"
+      },
+      "status": "pending"
+    }
+  ],
+  "metadata": {
+    "planName": "upgrade-to-java-17",
+    "projectName": "application",
+    "language": "java",
+    "createdAt": "2026-04-24T07:01:27.602Z",
+    "version": "1.0"
+  }
+}
