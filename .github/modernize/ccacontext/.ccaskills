@@ -1,0 +1,10 @@
+execute-modernization-plan
+execute-java-upgrade-task
+execute-modernization-task
+execute-upgrade-task
+integration-tests
+validate-playbook-compliance
+validate-playbook-evidence
+validation-check-consistency
+infrastructure-bicep-generation
+infrastructure-terraform-generation
