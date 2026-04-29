@@ -19,7 +19,13 @@
         "generateNewUnitTests": "false",
         "passUnitTests": "true"
       },
-      "status": "started"
+      "status": "success",
+      "taskSummary": "Upgraded from Java 8 / Spring Boot 2.7.18 to Java 25 / Spring Boot 4.0.0-RC2 (Spring Framework 7.1.x, Hibernate 7.1.x). Migrated javax.* to jakarta.* namespaces. Build passes and all unit tests pass.",
+      "successCriteriaStatus": {
+        "passBuild": true,
+        "generateNewUnitTests": false,
+        "passUnitTests": true
+      }
     }
   ],
   "metadata": {
